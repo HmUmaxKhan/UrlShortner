@@ -15,10 +15,8 @@ const urlSchema = mongoose.Schema({
             type:Date
         }
     }],
-    createdAt:{
-        type:Date
-    },
-    modifiedAt:{
-        type:Date
-    }
 })
+
+const UrlShort = mongoose.model('UrlShort',urlSchema)
+
+module.exports = UrlShort

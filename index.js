@@ -7,6 +7,8 @@ app.use(express.json())
 
 connectMongoDB()
 
+app.use("/api",require('./routes/urlShortRoute'))
+
 app.listen(port,()=>{
     console.log(`${port} is the port connected`);
 })
